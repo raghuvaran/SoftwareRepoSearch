@@ -1,0 +1,56 @@
+
+
+Error log timestamp Sunday 19-08-12 06:49:51 PM
+
+Runtime error: OS Error: The system cannot find the file specified.
+
+Error(Exception)>>defaultAction
+Error(Exception)>>activateHandler: <anUndefinedObject> 
+Error(Exception)>>handle
+Error(Exception)>>signal
+Error class(Exception class)>>signal: <'OS Error: The system...'> 
+BasicRunProgram(Object)>>error: <'OS Error: The system...'> 
+BasicRunProgram(BasicProgram)>>terminateRun: <aFileError> 
+[] in BasicProgram>>errorHandlerBlock
+ExceptionHandler>>evaluateResponseBlock: <aBlockClosure> for: <aFileError> 
+[] in ExceptionHandler>>handle:
+ProtectedFrameMarker(BlockClosure)>>setUnwind: <aBlockClosure> 
+BlockClosure>>invisibleEnsure: <aBlockClosure> 
+ExceptionHandler>>handle: <aFileError> 
+ExceptionHandler>>findHandler: <aFileError> 
+FileError(Exception)>>activateHandler: <anExceptionHandler> 
+FileError(Exception)>>handle
+FileError(Exception)>>signal
+FileError class>>signal: <'OS Error: The system...'> hostErrorCode: <2> 
+HostFileSystemError>>defaultAction
+ExceptionHandler>>findHandler: <aHostFileSystemError> 
+HostFileSystemError(Exception)>>activateHandler: <anExceptionHandler> 
+HostFileSystemError(Exception)>>handle
+HostFileSystemError(Exception)>>signal
+HostFileSystemError class>>signalWith: <2> 
+FileHandle class>>osError: <2> 
+FileHandle class(Object)>>osError
+[] in FileHandle class>>open:access:share:create:attributes:
+ExceptionHandler>>evaluateProtectedBlock: <aBlockClosure> 
+[] in ExceptionHandler>>activateDuring:
+ProtectedFrameMarker(BlockClosure)>>setUnwind: <aBlockClosure> 
+BlockClosure>>invisibleEnsure: <aBlockClosure> 
+ExceptionHandler>>activateDuring: <aBlockClosure> 
+ExceptionHandler class>>handle: <anExceptionSet> with: <aBlockClosure> during: <aBlockClosure> 
+BlockClosure>>on: <anExceptionSet> do: <aBlockClosure> 
+FileHandle class>>open: <'H:\Bab''s projects\So...'> access: <2147483648> share: <3> create: <3> attributes: <128> 
+FileHandle class>>open: <'datas.dat'> in: <aDirectory> access: <2147483648> share: <3> create: <3> attributes: <128> 
+FileHandle class>>openReadOnly: <'datas.dat'> in: <aDirectory> 
+File>>openReadOnly
+File>>readStream
+File class>>pathNameReadOnly: <'datas.dat'> in: <aDirectory> 
+Directory>>fileReadOnly: <'datas.dat'> 
+BasicFile>>from: <'datas.dat'> mode: <'INPUT'> handle: <'#datas'> 
+BasicFile class>>from: <'datas.dat'> mode: <'INPUT'> handle: <'#datas'> owner: <aBasicRunProgram> length: <anUndefinedObject> 
+[] in OpenCommand>>using:
+[] in BasicRunProgram>>begin
+ExceptionHandler>>evaluateProtectedBlock: <aBlockClosure> 
+[] in ExceptionHandler>>activateDuring:
+ProtectedFrameMarker(BlockClosure)>>setUnwind: <aBlockClosure> 
+BlockClosure>>invisibleEnsure: <aBlockClosure> 
+ExceptionHandler>>activateDuring: <aBlockClosure> 
